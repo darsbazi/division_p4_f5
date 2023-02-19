@@ -1,5 +1,5 @@
 depth = -100;
-allow_to_follow = true;
+allow_to_follow = false; // important
 
 x=0;
 y= room_height - 480 ;  

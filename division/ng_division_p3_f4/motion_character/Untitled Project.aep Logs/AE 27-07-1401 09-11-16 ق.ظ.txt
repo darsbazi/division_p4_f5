@@ -1,0 +1,12 @@
+Adobe After Effects v13.5 Windows 64 render log for project “Untitled Project.aep”
+
+Rendering started on 27/07/1401 at 09:11:16 ق.ظ
+
+  27/07/1401 09:11:16 ?.?: Starting composition “f_2”.
+
+  Output To: C:\Users\Admin\Desktop\division\ng_division_p3_f4\motion_character\jump\f_2\jump_[#####].png    27/07/1401 09:11:16 ?.?: Finished composition “f_2”.
+
+
+  Total Time Elapsed: 0 Seconds
+Log closed on 27/07/1401 at 09:11:16 ق.ظ
+

@@ -1,0 +1,1 @@
+x = global.ideal_width/2 -  150;

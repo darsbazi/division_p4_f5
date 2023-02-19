@@ -1,0 +1,1 @@
+instance_create_depth( obj_charactor.x ,935,-10 , obj_krokodil );

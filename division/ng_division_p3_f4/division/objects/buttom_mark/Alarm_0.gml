@@ -1,0 +1,1 @@
+spr_shape_4.go_up = true;

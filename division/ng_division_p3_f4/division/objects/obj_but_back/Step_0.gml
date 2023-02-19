@@ -1,0 +1,12 @@
+if(global.number_learn=3)
+{
+	obj_learn.sprite_index=learn2;
+}
+if(global.number_learn=2)
+{
+	obj_learn.sprite_index=learn1;
+}
+if(global.number_learn=1)
+{
+	obj_learn.sprite_index=learn;
+}

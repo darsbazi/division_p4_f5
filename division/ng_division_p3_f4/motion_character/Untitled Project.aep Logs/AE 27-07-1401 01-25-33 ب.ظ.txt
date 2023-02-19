@@ -1,0 +1,12 @@
+Adobe After Effects v13.5 Windows 64 render log for project “Untitled Project.aep”
+
+Rendering started on 27/07/1401 at 01:25:33 ب.ظ
+
+  27/07/1401 01:25:33 ?.?: Starting composition “f_1”.
+
+  Output To: F:\?????\f_1.avi    27/07/1401 01:25:33 ?.?: Finished composition “f_1”.
+
+
+  Total Time Elapsed: 0 Seconds
+Log closed on 27/07/1401 at 01:25:33 ب.ظ
+

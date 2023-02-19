@@ -1,0 +1,12 @@
+Adobe After Effects v13.5 Windows 64 render log for project “Untitled Project.aep”
+
+Rendering started on 25/07/1401 at 08:58:59 ب.ظ
+
+  25/07/1401 08:58:59 ?.?: Starting composition “f_2”.
+
+  Output To: C:\Users\Admin\Desktop\motion_character\f_2\run_[#####].png    25/07/1401 08:59:00 ?.?: Finished composition “f_2”.
+
+
+  Total Time Elapsed: 1 Seconds
+Log closed on 25/07/1401 at 08:59:00 ب.ظ
+

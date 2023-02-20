@@ -1,7 +1,7 @@
 if( global.make_qiostion )
 {
     global.make_qiostion=false;
-    mode = irandom_range( 2 , 2 ); // 1=>+  2=>-
+    mode = irandom_range(1 , 2 ); // 1=>+  2=>-
 
     for( e=0 ; e<1 ; e++ )
 	{
@@ -104,6 +104,7 @@ if( global.make_qiostion )
 	instance_destroy( obj_q_label_box );
 	instance_destroy( obj_q_show_num_box );
 	instance_destroy( obj_q_make_rec );
+	instance_destroy( obj_q_lable_show_number );
 	
 	
 	part_label = instance_create_depth( 640,127,-3, obj_q_label_box );
@@ -135,29 +136,18 @@ if( global.make_qiostion )
 		part_label.num_make_left = get_arr_1[0];
 		
 		part_label.num_left_change_color_1 = get_arr_1[0];
-		part_label.num_left_change_color_2 = get_arr_2[0];
-		
+		part_label.num_left_change_color_2 = get_arr_2[0];		
 	}
 
 	
+	// * * * * * * * * * * * * * * * * * * * * * * * * 
+	// * * * * * * * * * * * * * * * * * * * * * * * * 
+	// * * * * * * * * * * * * * * * * * * * * * * * * 
 	
 	
+	part_label.get_arr_for_label = save_num_not_slash;
 	
-	
-		
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

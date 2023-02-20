@@ -1,3 +1,29 @@
+if( flag_make_label )
+{
+	flag_make_label = false;
+	
+	part_label = instance_create_depth( x-250,y, depth-1 , obj_q_lable_show_number );
+	
+	arr_1 = get_arr_for_label[0];
+	arr_2 = get_arr_for_label[1];
+	
+	part_label.num_1 = arr_1[0];
+	part_label.num_2 = arr_1[1];
+	
+	part_label.num_3 = arr_2[0];
+	part_label.num_4 = arr_2[1];
+	
+	part_label.mode = mode;
+	
+	
+	arr_test = [part_label];
+	scr_set_parent_following(arr_test,id);
+}
+
+
+
+
+
 if( start_to_make )
 {
 	start_to_make = false;
@@ -7,9 +33,11 @@ if( start_to_make )
 	
 	arr_right = scr_make_box( x-30 , y-43 , 38 , 4 , num_make_right , num_ritgh_change_color_1 ); // ----->>>
 	arr_left = scr_make_box( x-130 , y-43 , 38 , 1 , num_make_left , num_left_change_color_1 ); // <<<-----
+
+
+    scr_set_parent_following( arr_right , id );
+    scr_set_parent_following( arr_left , id );
 	
-	//show_debug_message(arr_right);
-	//show_debug_message(arr_left);
 	
 // * * * * * * * * * * * * * * * *
 // * * * * * * * * * * * * * * * * set number
@@ -52,6 +80,8 @@ if( start_to_make )
 		test1 = arr_right[array_length_1d(arr_right)-1];
 		test2 = arr_right[0];
 		arr_right = scr_make_box( test2.x,test1.y+40 , 38 , 4 , 10 , 10 );		
+		
+		scr_set_parent_following( arr_right , id );
 		
 		for( i=0 ;i<array_length_1d(arr_right) ; i++ )
 		{
@@ -113,114 +143,8 @@ if( start_to_make )
 // * * * * * * * * * * * * * * * * * * * * * * * * * * *
 // * * * * * * * * * * * * * * * * * * * * * * * * * * *
 
-
-
-
-
-
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-    // make box right
-	
-	//set_X = 30;  //
-	//set_Y = 43;  // 
-	
-	//X_offcet = 38; //
-	//Y_offcet = 0;
-	//arr_save_box_all = [];
-	
-    //number_make_x = 4;  // 
-	
-	//for( i=0 ; i<4 ; i++ )
-	//{
-	//	part_box = instance_create_depth( x-set_X ,y-set_Y+Y_offcet ,depth-1 , obj_q_show_num_box );
-	//	Y_offcet+=38
-	//	arr_save_box_all[array_length_1d(arr_save_box_all)] = part_box;
-	//	for( e=0 ; e<number_make_x ; e++ )
-	//	{
-	//		part_box = instance_create_depth( part_box.x+X_offcet , part_box.y ,depth-1 , obj_q_show_num_box );
-	//		arr_save_box_all[array_length_1d(arr_save_box_all)] = part_box;
-	//	}
-	//}
-	
-	//couter_box = 0;
-	//arr_save_box=[];
-	
-    //max_i_need1 = num_make_right; ///
-	
-	
-	//for( i=0 ; i<array_length_1d(arr_save_box_all) ; i++ )
-	//{
-	//	couter_box+=1;
-	//	if( couter_box <= max_i_need1 )
-	//	{
-	//		arr_save_box[array_length_1d(arr_save_box)] = arr_save_box_all[i];
-	//	}
-	//	else
-	//	{
-	//		instance_destroy( arr_save_box_all[i] );
-	//	}
-	//}
-	
-	//show_debug_message( arr_save_box_all );
-	//show_debug_message( arr_save_box );
-	
-	//max_i_need2 = num_ritgh_change_color_1; ///
-	
-	//couter_box = 0;
-	//for( i=0 ; i<array_length_1d(arr_save_box) ; i++ )
-	//{
-	//	couter_box+=1;
-	//	if( couter_box <= max_i_need2 )
-	//	{
-	//	}
-	//	else
-	//	{
-	//		arr_save_box[i].image_index = 2;
-	//	}
-	//}
 
 
 

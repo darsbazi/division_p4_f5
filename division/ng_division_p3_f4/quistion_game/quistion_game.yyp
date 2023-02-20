@@ -55,6 +55,14 @@
             }
         },
         {
+            "Key": "1878cd5c-8644-48a7-bc1f-51b258b4416d",
+            "Value": {
+                "id": "bde04afc-e4e2-4f24-8bd8-310f347f1a8c",
+                "resourcePath": "scripts\\scr_creat_number_min_max\\scr_creat_number_min_max.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
             "Key": "1aaddcec-1235-4708-87e2-729131c9c7f9",
             "Value": {
                 "id": "bed19522-47d3-4e49-bd12-873fa2170096",
@@ -220,6 +228,14 @@
                 "id": "fb3eea6e-8258-4967-bc09-cec645d506fe",
                 "resourcePath": "options\\windowsuap\\options_windowsuap.yy",
                 "resourceType": "GMWindowsUAPOptions"
+            }
+        },
+        {
+            "Key": "83b0e2c5-1b98-4994-8f64-7f11b972d0e7",
+            "Value": {
+                "id": "21f7bf59-3578-4c45-a676-841d456dbd8e",
+                "resourcePath": "scripts\\scr_open_number\\scr_open_number.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -409,7 +425,9 @@
     ],
     "script_order": [
         "2586aebb-f5f6-459b-b6d2-2ff54760a2ac",
-        "15db4b5e-c49f-4b52-b582-7b3cc8a49d46"
+        "15db4b5e-c49f-4b52-b582-7b3cc8a49d46",
+        "83b0e2c5-1b98-4994-8f64-7f11b972d0e7",
+        "1878cd5c-8644-48a7-bc1f-51b258b4416d"
     ],
     "tutorial": ""
 }

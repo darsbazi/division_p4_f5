@@ -5,8 +5,8 @@ if( start_to_make )
 	set_X = 30;
 	set_Y = 43;
 	
-	arr_right = scr_make_box( x-30 , y-43 , 38 , 4 , 7 , 15 ); // ----->>>
-	arr_left = scr_make_box( x-130 , y-43 , 38 , 1 , 5 , 5 ); // <<<-----
+	arr_right = scr_make_box( x-30 , y-43 , 38 , 4 , num_make_right , num_ritgh_change_color_1 ); // ----->>>
+	arr_left = scr_make_box( x-130 , y-43 , 38 , 1 , num_make_left , num_left_change_color_1 ); // <<<-----
 	
 	//show_debug_message(arr_right);
 	//show_debug_message(arr_left);
@@ -28,9 +28,12 @@ if( start_to_make )
 		for( i=array_length_1d(arr_left)-1 ; i>-1 ; i-- )
 		{
 			counter+=1;
-			if( counter <= num_right_change_color )
+			if(num_make_right >=10)
 			{
-	 			arr_left[i].image_index = 1;
+				if( counter <= num_right_change_color )
+				{
+		 			arr_left[i].image_index = 1;
+				}
 			}
 		}
 	
@@ -63,7 +66,7 @@ if( start_to_make )
 		for( i=0 ; i<array_length_1d(arr_right) ; i++ )
 		{
 			counter_clear+=1;
-			if( counter_clear <= show_meny_clear )
+			if( counter_clear <= num_ritgh_change_color_2 )
 			{
 				arr_right[i].allow_show_zarb= true;
 			}
@@ -77,11 +80,43 @@ if( start_to_make )
 		{
 			arr_left[array_length_1d(arr_left)-1].mode_flash=1;
 		}
+	}
+	else if( mode == 1 )
+	{
+		couter_zarb = 0;
 		
+		for( i=0 ; i<array_length_1d(arr_right) ; i++ )
+		{
+			couter_zarb+=1;
+			if( couter_zarb <= num_ritgh_change_color_2 )
+			{
+				arr_right[i].allow_show_zarb = true;
+			}
+		}
 	}
 	
+	if( mode == 1 )
+	{
+		counter = 0;
+		
+		for( i=0 ; i<array_length_1d(arr_left) ; i++ )
+		{
+			counter+=1;
+			if( counter <= num_left_change_color_2 )
+			{
+				arr_left[i].allow_show_zarb = true;
+			}
+		}
+	}
+	
+	
 // * * * * * * * * * * * * * * * * * * * * * * * * * * *
-// * * * * * * * * * * * * * * * * * * * * * * * * * * *	
+// * * * * * * * * * * * * * * * * * * * * * * * * * * *
+
+
+
+
+
 
 }
 

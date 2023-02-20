@@ -2,13 +2,88 @@ if( start_to_make )
 {
 	start_to_make = false;
 	
-	arr_right = scr_make_box( 30,43 , 38 , 4 , 20 , 3 );
+	set_X = 30;
+	set_Y = 43;
 	
-	arr_left = scr_make_box( 130,43 , 38 , 1 , 8 , 1 );
+	arr_right = scr_make_box( x-30 , y-43 , 38 , 4 , 7 , 15 ); // ----->>>
+	arr_left = scr_make_box( x-130 , y-43 , 38 , 1 , 5 , 5 ); // <<<-----
 	
 	
 	show_debug_message(arr_right);
 	show_debug_message(arr_left);
+	
+// * * * * * * * * * * * * * * * *
+// * * * * * * * * * * * * * * * * set number
+	
+	for( i=0 ; i<array_length_1d(arr_left) ; i++ )
+	{
+		arr_left[i]. num_show = "1";
+	}
+
+// * * * * * * * * * * * * * * * *
+// * * * * * * * * * * * * * * * *
+	
+	if( mode == 0 )
+	{
+		counter = 0;
+		for( i=array_length_1d(arr_left)-1 ; i>-1 ; i-- )
+		{
+			counter+=1;
+			if( counter <= num_right_change_color )
+			{
+	 			arr_left[i].image_index = 1;
+			}
+		}
+	
+		if( array_length_1d(arr_right) >= 10 )
+		{
+			arr_get_var = scr_finde_Far_And_near_obj(arr_right);
+			//show_debug_message(  arr_get_var );
+		    part_rec = instance_create_depth( x,y,depth-2 , obj_q_make_rec );
+			part_rec.get_arr = arr_get_var;
+		}
+	}
+	else if(  mode == 1 && allow_to_make_help_box_10 )  
+	{
+		arr_get_var = scr_finde_Far_And_near_obj(arr_right);
+		
+		test1 = arr_right[array_length_1d(arr_right)-1];
+		test2 = arr_right[0];
+		arr_right = scr_make_box( test2.x,test1.y+40 , 38 , 4 , 10 , 10 );		
+		
+		for( i=0 ;i<array_length_1d(arr_right) ; i++ )
+		{
+			arr_right[i].image_index = 1
+		}
+		
+		arr_get_var = scr_finde_Far_And_near_obj(arr_right);
+		part_rec = instance_create_depth( x,y,depth-1 , obj_q_make_rec );
+		part_rec.get_arr = arr_get_var;
+		
+		counter_clear = 0;
+		for( i=0 ; i<array_length_1d(arr_right) ; i++ )
+		{
+			counter_clear+=1;
+			if( counter_clear <= show_meny_clear )
+			{
+				arr_right[i].allow_show_zarb= true;
+			}
+		}
+		
+		arr_left[array_length_1d(arr_left)-1].image_index = 1;
+		arr_left[array_length_1d(arr_left)-1].allow_show_zarb = true;
+		arr_left[array_length_1d(arr_left)-1].allow_to_show_line = true;
+		
+		if( array_length_1d(arr_left)%2 == 0 )
+		{
+			arr_left[array_length_1d(arr_left)-1].mode_flash=1;
+		}
+		
+	}
+	
+	
+//  * * * * * * * * * * * * * * * * * * * * * * * * * * *
+//  * * * * * * * * * * * * * * * * * * * * * * * * * * *
 	
 	
 	

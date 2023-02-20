@@ -10,7 +10,7 @@
 	
 	for( i=0 ; i<4 ; i++ )
 	{
-		part_box = instance_create_depth( x-set_X ,y-set_Y+Y_offcet ,depth-1 , obj_q_show_num_box );
+		part_box = instance_create_depth( set_X ,set_Y+Y_offcet ,depth-1 , obj_q_show_num_box );
 		Y_offcet+=38
 		arr_save_box_all[array_length_1d(arr_save_box_all)] = part_box;
 		for( e=0 ; e<number_make_x ; e++ )

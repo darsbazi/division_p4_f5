@@ -14,6 +14,6 @@ draw_text( x+37 , y+8 ,string(num_2));
 draw_text( x-37 , y+50 ,string(num_3));
 draw_text( x+37 , y+50 ,string(num_4));
 
-
-
 image_index = mode;
+
+draw_set_alpha(1);

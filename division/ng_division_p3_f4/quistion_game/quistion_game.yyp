@@ -47,6 +47,22 @@
             }
         },
         {
+            "Key": "15db4b5e-c49f-4b52-b582-7b3cc8a49d46",
+            "Value": {
+                "id": "1b26e0f0-c6dd-4c79-990d-006b26c2bc81",
+                "resourcePath": "scripts\\scr_finde_Far_And_near_obj\\scr_finde_Far_And_near_obj.yy",
+                "resourceType": "GMScript"
+            }
+        },
+        {
+            "Key": "1aaddcec-1235-4708-87e2-729131c9c7f9",
+            "Value": {
+                "id": "bed19522-47d3-4e49-bd12-873fa2170096",
+                "resourcePath": "fonts\\font_q_box1\\font_q_box1.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "1b5a0467-2a3b-48f4-a063-26bf8957b318",
             "Value": {
                 "id": "1a44f98b-397b-405d-91a9-3a3348b26525",
@@ -135,6 +151,14 @@
             }
         },
         {
+            "Key": "51821e6d-03be-4679-b4fe-e7f2e353445b",
+            "Value": {
+                "id": "446f98fd-e631-40bc-89cb-a55e4b4e091b",
+                "resourcePath": "objects\\obj_q_make_rec\\obj_q_make_rec.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "54cf4328-7e20-4666-bf90-028dade4b815",
             "Value": {
                 "id": "188ede06-9683-4e23-b214-6cd915cbf62c",
@@ -207,6 +231,14 @@
             }
         },
         {
+            "Key": "8c96976a-a722-4156-870c-dd9f1b01b0bc",
+            "Value": {
+                "id": "951a4aad-cb50-4e74-8c43-e39586dd78bf",
+                "resourcePath": "sprites\\spr_q_flash\\spr_q_flash.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "8e3a1ff6-e815-4357-8aec-acbb77b2e1e6",
             "Value": {
                 "id": "4ef5172a-a149-4898-ae07-80b53b731b3f",
@@ -255,6 +287,14 @@
             }
         },
         {
+            "Key": "c1fe778a-221e-44f3-8e87-4abf453ae88c",
+            "Value": {
+                "id": "3de8ef1a-4198-461b-a023-e6ecd44ac050",
+                "resourcePath": "fonts\\font_q_box\\font_q_box.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "c5ef5011-c429-411b-a0bc-c4d7244f8038",
             "Value": {
                 "id": "e5a51e31-801b-434d-b716-0aa4945c722c",
@@ -287,11 +327,27 @@
             }
         },
         {
+            "Key": "d7869e70-70b7-4e4e-91d9-b7395842afed",
+            "Value": {
+                "id": "0d7a016a-85ea-4058-8fbd-218c99b9d2c2",
+                "resourcePath": "sprites\\spr_q_flash1\\spr_q_flash1.yy",
+                "resourceType": "GMSprite"
+            }
+        },
+        {
             "Key": "de3bdcd4-df41-4051-8bf8-f44b40565d67",
             "Value": {
                 "id": "a1079a74-c6b9-4e6d-85e4-eddb02a05141",
                 "resourcePath": "rooms\\room0\\room0.yy",
                 "resourceType": "GMRoom"
+            }
+        },
+        {
+            "Key": "e399afae-c466-41c8-bd50-6f4acf35c389",
+            "Value": {
+                "id": "5ef74eb1-8ab1-4962-bf3f-be389965c302",
+                "resourcePath": "sprites\\spe_q_make_req\\spe_q_make_req.yy",
+                "resourceType": "GMSprite"
             }
         },
         {
@@ -333,10 +389,19 @@
                 "resourcePath": "options\\xboxone\\options_xboxone.yy",
                 "resourceType": "GMXBoxOneOptions"
             }
+        },
+        {
+            "Key": "f926e738-0a78-4a64-ba6b-cbd9f26f71b1",
+            "Value": {
+                "id": "3dab578e-dab4-4aa1-ac99-188173081619",
+                "resourcePath": "sprites\\spr_q_zarb\\spr_q_zarb.yy",
+                "resourceType": "GMSprite"
+            }
         }
     ],
     "script_order": [
-        "2586aebb-f5f6-459b-b6d2-2ff54760a2ac"
+        "2586aebb-f5f6-459b-b6d2-2ff54760a2ac",
+        "15db4b5e-c49f-4b52-b582-7b3cc8a49d46"
     ],
     "tutorial": ""
 }

@@ -159,6 +159,14 @@
             }
         },
         {
+            "Key": "52ff62e1-269d-4c22-ac39-b727bf684d38",
+            "Value": {
+                "id": "557167ca-7621-4230-b41a-8866a3ec8c51",
+                "resourcePath": "objects\\conterol_q_make_quistion\\conterol_q_make_quistion.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "54cf4328-7e20-4666-bf90-028dade4b815",
             "Value": {
                 "id": "188ede06-9683-4e23-b214-6cd915cbf62c",

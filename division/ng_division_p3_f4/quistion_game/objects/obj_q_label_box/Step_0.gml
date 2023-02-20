@@ -8,9 +8,8 @@ if( start_to_make )
 	arr_right = scr_make_box( x-30 , y-43 , 38 , 4 , 7 , 15 ); // ----->>>
 	arr_left = scr_make_box( x-130 , y-43 , 38 , 1 , 5 , 5 ); // <<<-----
 	
-	
-	show_debug_message(arr_right);
-	show_debug_message(arr_left);
+	//show_debug_message(arr_right);
+	//show_debug_message(arr_left);
 	
 // * * * * * * * * * * * * * * * *
 // * * * * * * * * * * * * * * * * set number
@@ -81,12 +80,8 @@ if( start_to_make )
 		
 	}
 	
-	
-//  * * * * * * * * * * * * * * * * * * * * * * * * * * *
-//  * * * * * * * * * * * * * * * * * * * * * * * * * * *
-	
-	
-	
+// * * * * * * * * * * * * * * * * * * * * * * * * * * *
+// * * * * * * * * * * * * * * * * * * * * * * * * * * *	
 
 }
 

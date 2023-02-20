@@ -3,21 +3,40 @@ if( flag_make_label )
 	flag_make_label = false;
 	
 	part_label = instance_create_depth( x-250,y, depth-1 , obj_q_lable_show_number );
-	
 	arr_1 = get_arr_for_label[0];
 	arr_2 = get_arr_for_label[1];
-	
 	part_label.num_1 = arr_1[0];
 	part_label.num_2 = arr_1[1];
-	
 	part_label.num_3 = arr_2[0];
 	part_label.num_4 = arr_2[1];
-	
 	part_label.mode = mode;
-	
-	
 	arr_test = [part_label];
 	scr_set_parent_following(arr_test,id);
+	
+	//  ** *** *** *** *** *** ** *** *** 
+	//  ** *** *** *** *** *** ** *** *** 
+
+   // show_debug_message( number_answer ); 
+
+    XX = 0;
+	XxX = -270;
+	
+	arr_save_label_show_number = [];
+
+    for( i=0 ; i<4 ; i++ )
+	{
+	     part_label = instance_create_depth( x+XX+XxX,y+150,depth-1 , obj_q_label_show_answer );
+		 arr_save_label_show_number[array_length_1d(arr_save_label_show_number)] = part_label;
+		 part_label.number_show = number_answer[i];
+		 part_label.currect_incurrect = arr_currect_incurrect[i];
+		 XX += 120;
+	}
+
+	//  ** *** *** *** *** *** ** *** *** 
+	//  ** *** *** *** *** *** ** *** *** 	
+	
+	
+	
 }
 
 

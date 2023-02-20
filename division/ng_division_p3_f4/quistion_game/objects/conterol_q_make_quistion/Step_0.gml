@@ -42,10 +42,10 @@ if( global.make_qiostion )
 		}
 	}
 	
-	show_debug_message( save_num_not_slash );
-	show_debug_message( save_num_with_slash );
-	show_debug_message( save_answer );
-	show_debug_message( save_answer_not_slash );
+	//show_debug_message( save_num_not_slash );
+	//show_debug_message( save_num_with_slash );
+	//show_debug_message( save_answer );
+	//show_debug_message( save_answer_not_slash );
 	
 	
 	// * * * * * * * * * * * * * * * * * * * * * * * * 
@@ -95,8 +95,6 @@ if( global.make_qiostion )
 		}
 	}
 	
-	show_debug_message( array_all_answer );
-	
 	// * * * * * * * * * * * * * * * * * * * * * * * * 
 	// * * * * * * * * * * * * * * * * * * * * * * * * 
 	// * * * * * * * * * * * * * * * * * * * * * * * * 
@@ -105,6 +103,7 @@ if( global.make_qiostion )
 	instance_destroy( obj_q_show_num_box );
 	instance_destroy( obj_q_make_rec );
 	instance_destroy( obj_q_lable_show_number );
+	instance_destroy( obj_q_label_show_answer );
 	
 	
 	part_label = instance_create_depth( 640,127,-3, obj_q_label_box );
@@ -144,8 +143,37 @@ if( global.make_qiostion )
 	// * * * * * * * * * * * * * * * * * * * * * * * * 
 	// * * * * * * * * * * * * * * * * * * * * * * * * 
 	
-	
 	part_label.get_arr_for_label = save_num_not_slash;
+	
+	part_label.number_answer = array_all_answer;
+	
+	
+	 save_value = array_all_answer[0];
+	
+	//show_debug_message( array_all_answer );
+	array_all_answer = scr_randomiz_array(array_all_answer);
+	//show_debug_message( array_all_answer );
+	//show_debug_message( save_value );
+	
+	
+	arr_currect_incurrect = [ 0,0,0,0 ];
+	
+	for( i=0 ; i<array_length_1d(array_all_answer) ; i++ )
+	{
+		 get_arr = array_all_answer[i];
+		
+		if( get_arr[0] == save_value[0] &&  get_arr[1] == save_value[1] )
+		{
+			arr_currect_incurrect[i] = 1;
+			break;
+		}
+	}
+	
+	//show_debug_message( arr_currect_incurrect );	
+	
+	part_label.arr_currect_incurrect = arr_currect_incurrect;
+
+	
 	
 }
 

@@ -15,3 +15,6 @@ allow_to_make_help_box_10 = false;
 get_arr_for_label = [];
 
 flag_make_label = true;
+
+number_answer = [];
+arr_currect_incurrect = [];

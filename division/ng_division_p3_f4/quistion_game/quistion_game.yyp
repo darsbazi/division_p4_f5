@@ -111,6 +111,14 @@
             }
         },
         {
+            "Key": "3600318e-1256-4a53-8f84-8e569a166724",
+            "Value": {
+                "id": "d8d1e58b-3306-4a46-836d-bd06e631e3bf",
+                "resourcePath": "fonts\\font_label_show_answer\\font_label_show_answer.yy",
+                "resourceType": "GMFont"
+            }
+        },
+        {
             "Key": "38158d2b-3f29-4a71-8385-54379a1dc6d9",
             "Value": {
                 "id": "35bc10e1-cb99-4e7e-8f11-4c9ad0950679",
@@ -287,11 +295,27 @@
             }
         },
         {
+            "Key": "95fc7c51-c08b-4e6e-8537-7fec5a4bc99c",
+            "Value": {
+                "id": "2b15276e-6d92-420c-b124-4b17de5df3c3",
+                "resourcePath": "objects\\obj_q_label_show_answer\\obj_q_label_show_answer.yy",
+                "resourceType": "GMObject"
+            }
+        },
+        {
             "Key": "a128950b-5063-4876-b4a6-b99dbd2ea6d1",
             "Value": {
                 "id": "1f3e1100-1644-420e-a5c9-60d03f401ff9",
                 "resourcePath": "options\\amazonfire\\options_amazonfire.yy",
                 "resourceType": "GMAmazonFireOptions"
+            }
+        },
+        {
+            "Key": "a8082787-5b3e-46e7-a34d-3083b8b45b5b",
+            "Value": {
+                "id": "8a9ae3f6-820d-483f-a63d-13f6bb3bb866",
+                "resourcePath": "scripts\\scr_randomiz_array\\scr_randomiz_array.yy",
+                "resourceType": "GMScript"
             }
         },
         {
@@ -436,7 +460,8 @@
         "15db4b5e-c49f-4b52-b582-7b3cc8a49d46",
         "83b0e2c5-1b98-4994-8f64-7f11b972d0e7",
         "1878cd5c-8644-48a7-bc1f-51b258b4416d",
-        "8f362e94-b570-4d2b-8f94-504f1a48d6a7"
+        "8f362e94-b570-4d2b-8f94-504f1a48d6a7",
+        "a8082787-5b3e-46e7-a34d-3083b8b45b5b"
     ],
     "tutorial": ""
 }

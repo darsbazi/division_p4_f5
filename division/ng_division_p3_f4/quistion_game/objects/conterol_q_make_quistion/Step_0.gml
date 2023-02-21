@@ -145,16 +145,15 @@ if( global.make_qiostion )
 	
 	part_label.get_arr_for_label = save_num_not_slash;
 	
-	part_label.number_answer = array_all_answer;
-	
-	
 	 save_value = array_all_answer[0];
 	
-	//show_debug_message( array_all_answer );
+	show_debug_message( array_all_answer );
 	array_all_answer = scr_randomiz_array(array_all_answer);
-	//show_debug_message( array_all_answer );
-	//show_debug_message( save_value );
+	show_debug_message( array_all_answer );
+	show_debug_message( save_value );
 	
+	
+	part_label.number_answer = array_all_answer;
 	
 	arr_currect_incurrect = [ 0,0,0,0 ];
 	
@@ -169,7 +168,7 @@ if( global.make_qiostion )
 		}
 	}
 	
-	//show_debug_message( arr_currect_incurrect );	
+	show_debug_message( arr_currect_incurrect );	
 	
 	part_label.arr_currect_incurrect = arr_currect_incurrect;
 

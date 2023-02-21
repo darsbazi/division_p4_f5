@@ -2,7 +2,7 @@ if( flag_make_label )
 {
 	flag_make_label = false;
 	
-	part_label = instance_create_depth( x-250,y, depth-1 , obj_q_lable_show_number );
+	part_label = instance_create_depth( x-270,y, depth-1 , obj_q_lable_show_number );
 	arr_1 = get_arr_for_label[0];
 	arr_2 = get_arr_for_label[1];
 	part_label.num_1 = arr_1[0];
@@ -25,7 +25,7 @@ if( flag_make_label )
 
     for( i=0 ; i<4 ; i++ )
 	{
-	     part_label = instance_create_depth( x+XX+XxX,y+150,depth-1 , obj_q_label_show_answer );
+	     part_label = instance_create_depth( x+XX+XxX,y+160,depth-1 , obj_q_label_show_answer );
 		 arr_save_label_show_number[array_length_1d(arr_save_label_show_number)] = part_label;
 		 part_label.number_show = number_answer[i];
 		 part_label.currect_incurrect = arr_currect_incurrect[i];
@@ -34,14 +34,7 @@ if( flag_make_label )
 
 	//  ** *** *** *** *** *** ** *** *** 
 	//  ** *** *** *** *** *** ** *** *** 	
-	
-	
-	
 }
-
-
-
-
 
 if( start_to_make )
 {
@@ -50,8 +43,8 @@ if( start_to_make )
 	set_X = 30;
 	set_Y = 43;
 	
-	arr_right = scr_make_box( x-30 , y-43 , 38 , 4 , num_make_right , num_ritgh_change_color_1 ); // ----->>>
-	arr_left = scr_make_box( x-130 , y-43 , 38 , 1 , num_make_left , num_left_change_color_1 ); // <<<-----
+	arr_right = scr_make_box( x-15 , y-43 , 38 , 4 , num_make_right , num_ritgh_change_color_1 ); // ----->>>
+	arr_left = scr_make_box( x-140 , y-43 , 38 , 1 , num_make_left , num_left_change_color_1 ); // <<<-----
 
 
     scr_set_parent_following( arr_right , id );
@@ -90,6 +83,7 @@ if( start_to_make )
 			//show_debug_message(  arr_get_var );
 		    part_rec = instance_create_depth( x,y,depth-2 , obj_q_make_rec );
 			part_rec.get_arr = arr_get_var;
+			part_rec.flag_read_code = true;
 		}
 	}
 	else if(  mode == 1 && allow_to_make_help_box_10 )  

@@ -18,9 +18,13 @@ flag_make_label = true;
 
 number_answer = [];
 arr_currect_incurrect = [];
+arr_save_label_show_number = [];
 
 // * * * * * * * * * * * * * * 
 // * * * * * * * * * * * * * * 
+
+
+
 
 allow_to_down = true;
 allow_to_up = false;

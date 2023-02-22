@@ -15,8 +15,8 @@ if( global.make_qiostion && !global.end_game )
 		
 		for( i=0 ; i<2 ; i++ )
 		{
-			num_1 = irandom_range( 1,7 );
-			num_2 = irandom_range( 1,7 );
+			num_1 = irandom_range( 1,6 );
+			num_2 = irandom_range( 1,6 );
 
 			get_arr=[num_1,num_2];
 			save_num_not_slash[array_length_1d(save_num_not_slash)] = get_arr;
@@ -34,7 +34,7 @@ if( global.make_qiostion && !global.end_game )
 			save_answer = save_num_with_slash[0]-save_num_with_slash[1];
 		}
 		
-		if( save_answer >= 10 || save_answer <= 0 )
+		if( save_answer >= 8 || save_answer <= 0 )
 		{
 			e -= 1;
 		}

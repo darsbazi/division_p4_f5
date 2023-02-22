@@ -3,7 +3,6 @@ if( allow_to_follow )
 	camera_set_view_pos( view_camera[0] , x ,y );
 }
 
-
 // go up
 
 if( flag_go_up )
@@ -13,7 +12,7 @@ if( flag_go_up )
 		flag_go_up =false;	
 		alarm[1] = 20; 
 		
-		global.make_question = true;
+		global.make_qiostion = true;
 	}
 	else
 	{
@@ -36,8 +35,6 @@ if( camera_get_view_y(view_camera[0]) > room_height-480 )
 {
 	camera_set_view_pos( view_camera[0] , x , room_height-480 );
 }
-
-
 
 if( camera_get_view_y(view_camera[0]) < 0 ) 
 {

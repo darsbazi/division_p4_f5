@@ -20,9 +20,7 @@ if( go_down_char )
 	if( alarm[0] = -1 && flag_alarm_down = true )
 	{
 		alarm[0]=70;
-
         flag_alarm_down = false;
-
 	}
 	y += ctrl_speed_go_down;
 }
@@ -49,8 +47,6 @@ if(sprite_index = spr_char_jump &&     image_index>23 && image_index<30  )
 if( y < obj_rope.y && one_true_1 = true )
 {
 	global.end_game = true;
-	//obj_ctrl_go_up_down.flag_go_down = false;
-	//obj_ctrl_go_up_down.flag_go_upp = true;
 	
 	lock_local = false;
 	one_true_1 = false;
@@ -63,26 +59,15 @@ if( y < obj_rope.y && one_true_1 = true )
 if( y > obj_rope.y+obj_rope.sprite_height-40 && one_true_2 = true )
 {
 	global.end_game = true;
-	//obj_ctrl_go_up_down.flag_go_down = false;
-	//obj_ctrl_go_up_down.flag_go_upp = true;
 	lock_local = false;
 	one_true_2 = false;
 	
 
 	a=instance_create_depth( obj_charactor.x+10 , 935 , -10 , obj_krokodil );
-	//alarm[4] = 50;
     a.flag_choose = 1;
 	alarm[1] = 120;
 
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -91,18 +76,13 @@ if( flag_reset_sprite = true )
 	if( image_index > 20 && image_index <22 && sprite_index = spr_charactor )
 	{	
 		
-		
-		
 		flag_reset_sprite = false; 
          go_up_char = false;
          flag_go_down = true;
          go_down_char = false;
 		 
-		 image_index =0
-
+		 image_index = 0;
          sprite_index = spr_char_idle;
-		 
-		// global.make_question = true;
 		 
 		 flag_alarm_up = true;
 		 flag_alarm_down = true

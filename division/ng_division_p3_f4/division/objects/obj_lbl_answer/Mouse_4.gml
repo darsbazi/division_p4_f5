@@ -1,4 +1,4 @@
- if( global.lock_clicking = true && obj_label_question.local_lock )
+/* if( global.lock_clicking = true && obj_label_question.local_lock )
 {
 
 if(label_answer = global.arr_correct) {

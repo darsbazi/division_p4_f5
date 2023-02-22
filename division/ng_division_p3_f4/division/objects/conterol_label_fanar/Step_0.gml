@@ -55,7 +55,7 @@ if( instance_exists( save_id ) )
 			save_id.image_xscale =1;
 			save_id.image_yscale =1;
 			
-			alarm[0]=30;
+			instance_destroy();
 		}
 	}
 }

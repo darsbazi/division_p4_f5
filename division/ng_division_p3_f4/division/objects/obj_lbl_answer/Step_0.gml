@@ -1,4 +1,4 @@
-y = save_id_parent.y+60; 
+/*y = save_id_parent.y+60; 
 
 if( rith_or_left = 1 )
 {

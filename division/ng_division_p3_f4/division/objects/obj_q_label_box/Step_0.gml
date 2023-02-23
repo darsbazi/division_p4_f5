@@ -201,13 +201,21 @@ if( allow_to_up )
 }
 
 // * * * * * * * * * * 
+// * * * * * * * * * * 
 
 if( global.end_game=true )
 {
 	allow_to_up = true;
 }
 
+// * * * * * * * * * * 
+// * * * * * * * * * * 
 
+if( allow_to_reseat_reseat_local_lock )
+{
+	allow_to_reseat_reseat_local_lock = false;
+	local_lock = true;
+}
 
 
 

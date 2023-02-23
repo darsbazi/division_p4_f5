@@ -23,14 +23,16 @@ arr_save_label_show_number = [];
 // * * * * * * * * * * * * * * 
 // * * * * * * * * * * * * * * 
 
-
-
-
 allow_to_down = true;
 allow_to_up = false;
 counter_step = 0;
 
 allow_to_follow_view = false;
 
+// * * * * * * * * * * * * * * 
+// * * * * * * * * * * * * * * 
+
+local_lock = true;
+allow_to_reseat_reseat_local_lock = false;
 
 

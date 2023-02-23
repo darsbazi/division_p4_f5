@@ -8,6 +8,7 @@ if( go_up_char = true )
 	if( alarm[0] = -1 && flag_alarm_up = true )
 	{
 		alarm[0]=70;
+		status_answer = true;
 		flag_alarm_up = false;
 	}
 	y -= ctrl_speed_go_up;
@@ -20,6 +21,7 @@ if( go_down_char )
 	if( alarm[0] = -1 && flag_alarm_down = true )
 	{
 		alarm[0]=70;
+		status_answer = false;
         flag_alarm_down = false;
 	}
 	y += ctrl_speed_go_down;

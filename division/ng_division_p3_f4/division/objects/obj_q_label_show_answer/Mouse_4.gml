@@ -1,6 +1,7 @@
-if( global.allow_to_clicking )
+if( global.allow_to_clicking && id_parent.local_lock && !global.end_game && local_lock_buttom )
 {
-	global.allow_to_clicking = false;
+	id_parent.local_lock = false;
+	
 
     if( currect_incurrect == 1 )
 	{
@@ -13,6 +14,8 @@ if( global.allow_to_clicking )
 		{
 			instance_create_depth(x,y,depth-1,obj_star);
 		}
+		
+		global.allow_to_clicking = false;
 	}
 	else
 	{
@@ -26,13 +29,15 @@ if( global.allow_to_clicking )
 		   part.image_index = 1;
 		}
 		
-		for( i=0 ; i<array_length_1d(id_parent.arr_save_label_show_number) ; i++ )
-		{
-			if( id_parent.arr_save_label_show_number[i].currect_incurrect == 1 )
-			{
-				id_parent.arr_save_label_show_number[i].image_index = 1;
-			}
-		}
+		local_lock_buttom = false;
+		
+		//for( i=0 ; i<array_length_1d(id_parent.arr_save_label_show_number) ; i++ )
+		//{
+		//	if( id_parent.arr_save_label_show_number[i].currect_incurrect == 1 )
+		//	{
+		//		id_parent.arr_save_label_show_number[i].image_index = 1;
+		//	}
+		//}
 		
 	}
 
